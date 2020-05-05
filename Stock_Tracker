@@ -1,0 +1,9 @@
+from yahoo_fin import stock_info as si
+info_sitrep = int(input("How many stocks do you want to lookup?"))
+
+for i in range(info_sitrep):
+    n=input()
+stock_name = input("What's the Stock Quote ") #need to repeat it in relation to the input number
+
+
+si.get_live_price(stock_one)
