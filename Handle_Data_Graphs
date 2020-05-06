@@ -11,9 +11,12 @@ style.use('ggplot')
 start = dt.datetime(2000,1,1)
 end = dt.datetime(2016,12,31)
 
+
+df.to_csv('tsla.csv') #exports df data into a new csv file called tesla.csv (Step 1)
 df = pd.read_csv('tsla.csv', parse_dates=True, index_col=0) #reads the csv and creates columns
+
 print(df.head()) #head returns the rows of a data frame or series(default is 5)
-df.to_cvs('tsla.csv') #exports data into a cvs file called tesla.csv
+
 
 df.plot()
 #plt.show()#use only in shell
